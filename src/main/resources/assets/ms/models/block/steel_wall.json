@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ms:blocks/steelwall32",
+    "up": "ms:blocks/steelwall32",
+    "north": "ms:blocks/steelwall32",
+    "east": "ms:blocks/steelwall32",
+    "south": "ms:blocks/steelwall32",
+    "west": "ms:blocks/steelwall32",
+    "particle": "ms:blocks/steelwall32"
+  }
+}

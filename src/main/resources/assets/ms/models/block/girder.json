@@ -1,0 +1,10 @@
+{
+  "parent": "ms:custom/girder",
+  "textures": {
+    "all": "ms:blocks/pads",
+    "particle": "ms:blocks/pads",
+    "1": "ms:blocks/texture",
+    "2": "ms:blocks/pads",
+    "missing": "ms:blocks/"
+  }
+}

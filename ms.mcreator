@@ -1,0 +1,69 @@
+{
+  "mod_elements": [
+    {
+      "name": "SteelWall",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_wall"
+    },
+    {
+      "name": "SS13",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ss_13"
+    },
+    {
+      "name": "Girder",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "girder"
+    },
+    {
+      "name": "SteelSheet",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_sheet"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.ms.steel_sheet": "Steel Sheet",
+      "block.ms.steel_wall": "Steel Wall",
+      "itemGroup.tabss_13": "SS 1 3",
+      "block.ms.girder": "Girder"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "ms",
+    "modName": "ms13",
+    "version": "1.0.0",
+    "author": "nukec, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.ms",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}
