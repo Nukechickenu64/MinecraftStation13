@@ -31,6 +31,66 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "steel_sheet"
+    },
+    {
+      "name": "Ms13Constructable",
+      "type": "tag",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ms_13_constructable"
+    },
+    {
+      "name": "Ms13Construction",
+      "type": "tag",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ms_13_construction"
+    },
+    {
+      "name": "Ms13GirderS",
+      "type": "tag",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ms_13_girder_s"
+    },
+    {
+      "name": "SteelSheetRightclickedGirder",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_sheet_rightclicked_girder",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

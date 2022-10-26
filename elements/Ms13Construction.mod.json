@@ -1,0 +1,21 @@
+{
+  "_fv": 33,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [
+      {
+        "value": "CUSTOM:Girder"
+      }
+    ],
+    "blocks": [
+      {
+        "value": "CUSTOM:Girder"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "ms_13_construction",
+    "namespace": "forge"
+  }
+}

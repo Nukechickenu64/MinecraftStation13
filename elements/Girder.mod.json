@@ -34,7 +34,9 @@
       }
     ],
     "name": "Girder",
-    "specialInfo": [],
+    "specialInfo": [
+      "used to make walls"
+    ],
     "hardness": 5.0,
     "resistance": 10.0,
     "hasGravity": true,
