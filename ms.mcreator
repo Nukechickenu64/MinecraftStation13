@@ -135,6 +135,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "welder"
+    },
+    {
+      "name": "SpaceEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "space_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
