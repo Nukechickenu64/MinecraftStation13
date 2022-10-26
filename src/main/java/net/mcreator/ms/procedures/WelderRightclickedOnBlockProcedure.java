@@ -2,6 +2,7 @@ package net.mcreator.ms.procedures;
 
 import net.minecraftforge.items.ItemHandlerHelper;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.state.Property;
@@ -9,6 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Block;
 
 import net.mcreator.ms.item.SteelSheetItem;
 import net.mcreator.ms.block.SteelWallBlock;
@@ -85,19 +87,9 @@ public class WelderRightclickedOnBlockProcedure {
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
 		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == GirderBlock.block && (itemstack).getDamage() < 94) {
-			{
-				BlockPos _bp = new BlockPos(x, y, z);
-				BlockState _bs = GirderBlock.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_property != null && _bs.get(_property) != null)
-						try {
-							_bs = _bs.with(_property, (Comparable) entry.getValue());
-						} catch (Exception e) {
-						}
-				}
-				world.setBlockState(_bp, _bs, 3);
+			if (world instanceof World) {
+				Block.spawnDrops(world.getBlockState(new BlockPos(x, y, z)), (World) world, new BlockPos(x, y, z));
+				world.destroyBlock(new BlockPos(x, y, z), false);
 			}
 			{
 				ItemStack _ist = itemstack;
