@@ -2,15 +2,14 @@ package net.mcreator.ms.procedures;
 
 import net.minecraftforge.items.ItemHandlerHelper;
 
-import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.state.Property;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
 
 import net.mcreator.ms.item.SteelSheetItem;
 import net.mcreator.ms.block.SteelWallBlock;
@@ -87,10 +86,7 @@ public class WelderRightclickedOnBlockProcedure {
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
 		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == GirderBlock.block && (itemstack).getDamage() < 94) {
-			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos(x, y, z)), (World) world, new BlockPos(x, y, z));
-				world.destroyBlock(new BlockPos(x, y, z), false);
-			}
+			world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
 			{
 				ItemStack _ist = itemstack;
 				if (_ist.attemptDamageItem((int) 5, new Random(), null)) {
