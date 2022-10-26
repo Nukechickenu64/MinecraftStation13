@@ -63,20 +63,29 @@ public class SteelSheetRightclickedGirderProcedure {
 				world.setBlockState(_bp, _bs, 3);
 			}
 		} else {
-			world.setBlockState(
-					new BlockPos(
-							entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 20, entity.getLook(1f).y * 20, entity.getLook(1f).z * 20),
-									RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getX(),
-							entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 20, entity.getLook(1f).y * 20, entity.getLook(1f).z * 20),
-									RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getY(),
-							entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 20, entity.getLook(1f).y * 20, entity.getLook(1f).z * 20),
-									RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()),
-					GirderBlock.block.getDefaultState(), 3);
-			if (!((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).abilities.isCreativeMode : false)) {
-				(itemstack).shrink((int) 1);
+			if (true) {
+				world.setBlockState(
+						new BlockPos(
+								x + (entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 20, entity.getLook(1f).y * 20,
+														entity.getLook(1f).z * 20),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getFace()).getXOffset(),
+								y + (entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 20, entity.getLook(1f).y * 20,
+														entity.getLook(1f).z * 20),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getFace()).getYOffset(),
+								z + (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+										entity.getEyePosition(1f).add(entity.getLook(1f).x * 20, entity.getLook(1f).y * 20,
+												entity.getLook(1f).z * 20),
+										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getFace()).getZOffset()),
+						GirderBlock.block.getDefaultState(), 3);
+				if (!((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).abilities.isCreativeMode : false)) {
+					(itemstack).shrink((int) 1);
+				}
 			}
 		}
 	}

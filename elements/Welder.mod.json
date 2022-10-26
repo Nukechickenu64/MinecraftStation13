@@ -1,0 +1,39 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "welder",
+    "customModelName": "Normal",
+    "name": "Welder",
+    "specialInfo": [
+      "use this on walls to remove their metal"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:SS13"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "blocksAffected": [
+      {
+        "value": "CUSTOM:SteelWall"
+      },
+      {
+        "value": "CUSTOM:Girder"
+      }
+    ],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true,
+    "onRightClickedOnBlock": {
+      "name": "WelderRightclickedOnBlock"
+    }
+  }
+}

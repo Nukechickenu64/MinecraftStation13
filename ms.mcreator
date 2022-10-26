@@ -91,6 +91,50 @@
           }
         ]
       }
+    },
+    {
+      "name": "WelderRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "welder_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Welder",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "welder"
     }
   ],
   "variable_elements": [],
@@ -100,6 +144,7 @@
       "item.ms.steel_sheet": "Steel Sheet",
       "block.ms.steel_wall": "Steel Wall",
       "itemGroup.tabss_13": "SS 1 3",
+      "item.ms.welder": "Welder",
       "block.ms.girder": "Girder"
     }
   },
