@@ -150,7 +150,90 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/space"
+    },
+    {
+      "name": "Space",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "space",
+      "path": "~/space"
+    },
+    {
+      "name": "ZeroG",
+      "type": "potioneffect",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_g",
+      "path": "~/space"
+    },
+    {
+      "name": "ZeroGEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_g_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/space"
+    },
+    {
+      "name": "ZeroGEffectExpires",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_g_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/space"
+    },
+    {
+      "name": "GravScrambler",
+      "type": "potion",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grav_scrambler",
+      "path": "~/space"
+    },
+    {
+      "name": "SpaceBiome",
+      "type": "biome",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "space_biome",
+      "path": "~/space"
+    },
+    {
+      "name": "SpaceDimension",
+      "type": "dimension",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "space_dimension",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/space"
     }
   ],
   "variable_elements": [],
@@ -158,15 +241,28 @@
   "language_map": {
     "en_us": {
       "item.ms.steel_sheet": "Steel Sheet",
-      "block.ms.steel_wall": "Steel Wall",
+      "block.ms.space": "Space",
       "itemGroup.tabss_13": "SS 1 3",
+      "item.minecraft.tipped_arrow.effect.grav_scrambler": "Arrow of Grav Scrambler",
+      "effect.zero_g": "Zero G",
+      "item.minecraft.lingering_potion.effect.grav_scrambler": "Lingering Potion of Grav Scrambler",
+      "block.ms.girder": "Girder",
+      "biome.ms.space_biome": "Space Biome",
+      "item.minecraft.splash_potion.effect.grav_scrambler": "Splash Potion of Grav Scrambler",
+      "block.ms.steel_wall": "Steel Wall",
+      "item.ms.space_dimension": "Space Dimension Portal Igniter",
       "item.ms.welder": "Welder",
-      "block.ms.girder": "Girder"
+      "item.minecraft.potion.effect.grav_scrambler": "Gravity Scrambler"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "space",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "ms",

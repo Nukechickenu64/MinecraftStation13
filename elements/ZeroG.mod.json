@@ -1,0 +1,26 @@
+{
+  "_fv": 33,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Zero G",
+    "icon": "png-clipart-alien-semiotic-standard-icons-artificial-gravity-area-non-pressurized-suit-required-white-and-black-icon-thumbnail.png",
+    "color": {
+      "value": -16774337,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "ZeroGEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "ZeroGEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "ZeroGEffectExpires"
+    }
+  }
+}

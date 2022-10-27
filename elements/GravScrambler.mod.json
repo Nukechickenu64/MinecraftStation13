@@ -1,0 +1,21 @@
+{
+  "_fv": 33,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Gravity Scrambler",
+    "splashName": "Splash Potion of Grav Scrambler",
+    "lingeringName": "Lingering Potion of Grav Scrambler",
+    "arrowName": "Arrow of Grav Scrambler",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:ZeroG"
+        },
+        "duration": 1,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}
