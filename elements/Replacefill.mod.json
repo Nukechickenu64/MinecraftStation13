@@ -1,0 +1,9 @@
+{
+  "_fv": 33,
+  "_type": "function",
+  "definition": {
+    "code": "fill ~10 ~10 ~10 ~-10 ~-10 ~-10 ms:space replace minecraft:air\nfill ~10 ~10 ~10 ~-10 ~-10 ~-10 minecraft:air replace minecraft:bedrock",
+    "name": "replacefill",
+    "namespace": "mod"
+  }
+}

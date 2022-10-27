@@ -19,6 +19,6 @@ public class SpaceEntityCollidesInTheBlockProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(ZeroGPotionEffect.potion, (int) 1, (int) 1, (true), (true)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(ZeroGPotionEffect.potion, (int) 2, (int) 1, (true), (true)));
 	}
 }

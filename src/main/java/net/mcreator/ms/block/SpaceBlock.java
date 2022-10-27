@@ -44,6 +44,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.ms.procedures.SpaceEntityCollidesInTheBlockProcedure;
+import net.mcreator.ms.procedures.SpaceBlockAddedProcedure;
 import net.mcreator.ms.itemgroup.SS13ItemGroup;
 import net.mcreator.ms.MsModElements;
 
@@ -75,7 +76,7 @@ public class SpaceBlock extends MsModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void clientLoad(FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(block, RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
 
 	public static class CustomBlock extends Block {
@@ -106,6 +107,19 @@ public class SpaceBlock extends MsModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
+		}
+
+		@Override
+		public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
+			super.onBlockAdded(blockstate, world, pos, oldState, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+
+			SpaceBlockAddedProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override
@@ -149,7 +163,7 @@ public class SpaceBlock extends MsModElements.ModElement {
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == World.OVERWORLD)
+					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("ms:space_dimension")))
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;

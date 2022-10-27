@@ -6,7 +6,8 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "steel_wall"
+      "registry_name": "steel_wall",
+      "path": "~/construction/blocks"
     },
     {
       "name": "SS13",
@@ -14,7 +15,8 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ss_13"
+      "registry_name": "ss_13",
+      "path": "~/construction"
     },
     {
       "name": "Girder",
@@ -22,7 +24,8 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "girder"
+      "registry_name": "girder",
+      "path": "~/construction/girders"
     },
     {
       "name": "SteelSheet",
@@ -30,7 +33,8 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "steel_sheet"
+      "registry_name": "steel_sheet",
+      "path": "~/construction/material"
     },
     {
       "name": "Ms13Constructable",
@@ -38,7 +42,8 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ms_13_constructable"
+      "registry_name": "ms_13_constructable",
+      "path": "~/construction"
     },
     {
       "name": "Ms13Construction",
@@ -46,7 +51,8 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ms_13_construction"
+      "registry_name": "ms_13_construction",
+      "path": "~/construction"
     },
     {
       "name": "Ms13GirderS",
@@ -54,7 +60,8 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ms_13_girder_s"
+      "registry_name": "ms_13_girder_s",
+      "path": "~/construction"
     },
     {
       "name": "SteelSheetRightclickedGirder",
@@ -90,7 +97,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/construction/material"
     },
     {
       "name": "WelderRightclickedOnBlock",
@@ -126,7 +134,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/construction/tools"
     },
     {
       "name": "Welder",
@@ -134,7 +143,8 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "welder"
+      "registry_name": "welder",
+      "path": "~/construction/tools"
     },
     {
       "name": "SpaceEntityCollidesInTheBlock",
@@ -228,10 +238,48 @@
       "type": "dimension",
       "sortid": 14,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "space_dimension",
       "metadata": {
         "ep": false
+      },
+      "path": "~/construction/material"
+    },
+    {
+      "name": "Replacefill",
+      "type": "function",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "replacefill",
+      "path": "~/space"
+    },
+    {
+      "name": "SpaceBlockAdded",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "space_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/space"
     }
@@ -242,7 +290,7 @@
     "en_us": {
       "item.ms.steel_sheet": "Steel Sheet",
       "block.ms.space": "Space",
-      "itemGroup.tabss_13": "SS 1 3",
+      "itemGroup.tabss_13": "SS13",
       "item.minecraft.tipped_arrow.effect.grav_scrambler": "Arrow of Grav Scrambler",
       "effect.zero_g": "Zero G",
       "item.minecraft.lingering_potion.effect.grav_scrambler": "Lingering Potion of Grav Scrambler",
@@ -261,6 +309,27 @@
       {
         "name": "space",
         "children": []
+      },
+      {
+        "name": "construction",
+        "children": [
+          {
+            "name": "tools",
+            "children": []
+          },
+          {
+            "name": "girders",
+            "children": []
+          },
+          {
+            "name": "blocks",
+            "children": []
+          },
+          {
+            "name": "material",
+            "children": []
+          }
+        ]
       }
     ]
   },

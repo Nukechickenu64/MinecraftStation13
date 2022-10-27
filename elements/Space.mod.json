@@ -20,7 +20,7 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "TRANSLUCENT",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [],
     "name": "Space",
@@ -113,11 +113,14 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "SpaceBlockAdded"
+    },
     "onEntityCollides": {
       "name": "SpaceEntityCollidesInTheBlock"
     },
     "spawnWorldTypes": [
-      "Surface"
+      "CUSTOM:SpaceDimension"
     ],
     "restrictionBiomes": [],
     "blocksToReplace": [
