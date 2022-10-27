@@ -11,13 +11,11 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.biome.ParticleEffectAmbience;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.particles.ParticleTypes;
 
 import net.mcreator.ms.block.SpaceBlock;
 import net.mcreator.ms.MsModElements;
@@ -36,8 +34,7 @@ public class SpaceBiomeBiome extends MsModElements.ModElement {
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-16777216).setWaterColor(4159204).setWaterFogColor(329011)
-						.withSkyColor(-16777216).withFoliageColor(10387789).withGrassColor(-16777216)
-						.setParticle(new ParticleEffectAmbience(ParticleTypes.CRIT, 0.001f)).build();
+						.withSkyColor(-16777216).withFoliageColor(10387789).withGrassColor(-16777216).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(SpaceBlock.block.getDefaultState(),
 								SpaceBlock.block.getDefaultState(), SpaceBlock.block.getDefaultState())));
