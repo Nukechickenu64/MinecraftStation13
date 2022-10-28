@@ -1,0 +1,79 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 185,
+    "height": 196,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 275,
+          "y": 94
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "craft",
+          "width": 51,
+          "height": 20,
+          "name": "craft",
+          "x": 208,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "craft",
+          "width": 51,
+          "height": 20,
+          "name": "craft",
+          "x": 208,
+          "y": 50
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "craft",
+          "width": 51,
+          "height": 20,
+          "name": "craft",
+          "x": 208,
+          "y": 74
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "cable cuffs",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "cable cuffs",
+          "x": 146,
+          "y": 31
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "grey",
+        "1": "plating",
+        "2": "redwire",
+        "3": "floorsteel"
+      },
+      "name": "default"
+    }
+  }
+}

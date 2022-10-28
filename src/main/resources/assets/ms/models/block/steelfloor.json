@@ -1,0 +1,10 @@
+{
+  "parent": "ms:custom/floor",
+  "textures": {
+    "all": "ms:blocks/steelwall",
+    "particle": "ms:blocks/steelwall",
+    "0": "ms:blocks/grey",
+    "1": "ms:blocks/plating",
+    "3": "ms:blocks/floorsteel"
+  }
+}

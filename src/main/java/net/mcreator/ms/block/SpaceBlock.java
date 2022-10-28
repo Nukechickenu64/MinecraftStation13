@@ -45,7 +45,6 @@ import net.minecraft.block.Block;
 
 import net.mcreator.ms.procedures.SpaceEntityCollidesInTheBlockProcedure;
 import net.mcreator.ms.procedures.SpaceBlockAddedProcedure;
-import net.mcreator.ms.itemgroup.SS13ItemGroup;
 import net.mcreator.ms.MsModElements;
 
 import java.util.stream.Stream;
@@ -70,7 +69,7 @@ public class SpaceBlock extends MsModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(SS13ItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -81,7 +80,7 @@ public class SpaceBlock extends MsModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.AIR).sound(SoundType.SLIME).hardnessAndResistance(-1, 3600000).setLightLevel(s -> 3)
+			super(Block.Properties.create(Material.AIR).sound(SoundType.CLOTH).hardnessAndResistance(-1, 3600000).setLightLevel(s -> 3)
 					.doesNotBlockMovement().notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("space");
 		}

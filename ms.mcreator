@@ -15,8 +15,7 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ss_13",
-      "path": "~/construction"
+      "registry_name": "ss_13"
     },
     {
       "name": "Girder",
@@ -243,7 +242,7 @@
       "metadata": {
         "ep": false
       },
-      "path": "~/construction/material"
+      "path": "~/space"
     },
     {
       "name": "Replacefill",
@@ -282,21 +281,275 @@
         ]
       },
       "path": "~/space"
+    },
+    {
+      "name": "LatticeBlockAdded",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lattice_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/construction/flooring"
+    },
+    {
+      "name": "Lattice",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lattice",
+      "path": "~/construction/flooring/flooring blocks"
+    },
+    {
+      "name": "Ss13crafinggui",
+      "type": "gui",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ss_13crafinggui",
+      "path": "~/construction/material"
+    },
+    {
+      "name": "Ss13craftmenuOnKeyPressed",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ss_13craftmenu_on_key_pressed",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/crafting"
+    },
+    {
+      "name": "Ss13craftmenu",
+      "type": "keybind",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ss_13craftmenu",
+      "path": "~/crafting"
+    },
+    {
+      "name": "SteelRodRightclickedSpace",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_rod_rightclicked_space",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/construction/material"
+    },
+    {
+      "name": "SteelRod",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_rod",
+      "path": "~/construction/material"
+    },
+    {
+      "name": "Destroyedinspace",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destroyedinspace",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/space"
+    },
+    {
+      "name": "Dhoppergui",
+      "type": "gui",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dhoppergui",
+      "path": "~/dimensionmovement"
+    },
+    {
+      "name": "Sendtospace",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sendtospace",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dimensionmovement"
+    },
+    {
+      "name": "Sendtoearth",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sendtoearth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dimensionmovement"
+    },
+    {
+      "name": "DHopper",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d_hopper",
+      "path": "~/dimensionmovement"
+    },
+    {
+      "name": "FloorTile",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floor_tile",
+      "path": "~/construction/flooring/flooring types"
+    },
+    {
+      "name": "Plating",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plating",
+      "path": "~/construction/flooring/flooring blocks"
+    },
+    {
+      "name": "FloorTileRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floor_tile_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/construction/flooring/flooring blocks"
+    },
+    {
+      "name": "Steelfloor",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steelfloor",
+      "path": "~/construction/flooring/flooring blocks"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.ms.lattice": "Lattice",
       "item.ms.steel_sheet": "Steel Sheet",
       "block.ms.space": "Space",
       "itemGroup.tabss_13": "SS13",
       "item.minecraft.tipped_arrow.effect.grav_scrambler": "Arrow of Grav Scrambler",
       "effect.zero_g": "Zero G",
       "item.minecraft.lingering_potion.effect.grav_scrambler": "Lingering Potion of Grav Scrambler",
+      "key.ms.ss_13craftmenu": "ms13crafting",
       "block.ms.girder": "Girder",
+      "item.ms.floor_tile": "Floor Tile",
+      "block.ms.plating": "Plating",
       "biome.ms.space_biome": "Space Biome",
       "item.minecraft.splash_potion.effect.grav_scrambler": "Splash Potion of Grav Scrambler",
+      "item.ms.steel_rod": "Steel Rod",
+      "block.ms.steelfloor": "Steelfloor",
+      "block.ms.d_hopper": "Hopper",
       "block.ms.steel_wall": "Steel Wall",
       "item.ms.space_dimension": "Space Dimension Portal Igniter",
       "item.ms.welder": "Welder",
@@ -328,8 +581,33 @@
           {
             "name": "material",
             "children": []
+          },
+          {
+            "name": "flooring",
+            "children": [
+              {
+                "name": "flooring types",
+                "children": []
+              },
+              {
+                "name": "flooring blocks",
+                "children": []
+              }
+            ]
           }
         ]
+      },
+      {
+        "name": "crafting",
+        "children": []
+      },
+      {
+        "name": "dimensionmovement",
+        "children": []
+      },
+      {
+        "name": "lavaland",
+        "children": []
       }
     ]
   },

@@ -2,18 +2,18 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "space",
+    "texture": "steelwall",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "nothing:default",
+    "customModelName": "floor:default",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
-    "displayFluidOverlay": false,
+    "displayFluidOverlay": true,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
@@ -22,15 +22,25 @@
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
-    "boundingBoxes": [],
-    "name": "Space",
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 12.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Steelfloor",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:SS13"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -44,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "AIR"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -65,11 +75,11 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
-    "isNotColidable": true,
+    "reactionToPushing": "BLOCK",
+    "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "CLOTH"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -86,7 +96,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 3,
+    "luminance": 0,
     "unbreakable": true,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
@@ -113,25 +123,17 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "SpaceBlockAdded"
-    },
-    "onEntityCollides": {
-      "name": "SpaceEntityCollidesInTheBlock"
-    },
-    "spawnWorldTypes": [
-      "CUSTOM:SpaceDimension"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.AIR"
+        "value": "Blocks.STONE"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 30,
-    "frequencyOnChunk": 30,
-    "minGenerateHeight": 180,
-    "maxGenerateHeight": 320
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }

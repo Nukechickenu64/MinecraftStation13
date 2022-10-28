@@ -2,14 +2,14 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "space",
+    "texture": "screenterm",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 2,
-    "customModelName": "nothing:default",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -18,19 +18,29 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
-    "boundingBoxes": [],
-    "name": "Space",
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Hopper",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:SS13"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -42,9 +52,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
-      "value": "AIR"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -66,10 +76,10 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": true,
+    "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "CLOTH"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -86,7 +96,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 3,
+    "luminance": 0,
     "unbreakable": true,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
@@ -96,42 +106,34 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "hasInventory": true,
+    "guiBoundTo": "Dhoppergui",
+    "openGUIOnRightClick": true,
+    "inventorySize": 0,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
-    "inventoryComparatorPower": true,
+    "inventoryDropWhenDestroyed": false,
+    "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
     "energyInitial": 0,
-    "energyCapacity": 400000,
+    "energyCapacity": 20,
     "energyMaxReceive": 200,
     "energyMaxExtract": 200,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "SpaceBlockAdded"
-    },
-    "onEntityCollides": {
-      "name": "SpaceEntityCollidesInTheBlock"
-    },
-    "spawnWorldTypes": [
-      "CUSTOM:SpaceDimension"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.AIR"
+        "value": "Blocks.STONE"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 30,
-    "frequencyOnChunk": 30,
-    "minGenerateHeight": 180,
-    "maxGenerateHeight": 320
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }

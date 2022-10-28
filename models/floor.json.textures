@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "grey",
+        "1": "plating",
+        "3": "floorsteel"
+      },
+      "name": "default"
+    }
+  }
+}

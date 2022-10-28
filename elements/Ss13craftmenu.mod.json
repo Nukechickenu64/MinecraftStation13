@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "ms13crafting",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "Ss13craftmenuOnKeyPressed"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "lavaland",
+          "width": 67,
+          "height": 20,
+          "name": "lavaland",
+          "x": 173,
+          "y": 85
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "space",
+          "onClick": {
+            "name": "Sendtospace"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "space",
+          "x": 181,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "what dimensions to travel to?",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "what dimensions to travel to?",
+          "x": 136,
+          "y": 70
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "earth",
+          "onClick": {
+            "name": "Sendtoearth"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "earth",
+          "x": 181,
+          "y": 133
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

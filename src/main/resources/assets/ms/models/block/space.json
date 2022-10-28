@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "ms:custom/nothing",
   "textures": {
-    "down": "ms:blocks/space",
-    "up": "ms:blocks/space",
-    "north": "ms:blocks/space",
-    "east": "ms:blocks/space",
-    "south": "ms:blocks/space",
-    "west": "ms:blocks/space",
+    "all": "ms:blocks/space",
     "particle": "ms:blocks/space"
   }
 }

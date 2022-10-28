@@ -1,0 +1,8 @@
+{
+  "parent": "ms:custom/lattice",
+  "textures": {
+    "all": "ms:blocks/steelwall",
+    "particle": "ms:blocks/steelwall",
+    "0": "ms:blocks/grey"
+  }
+}
