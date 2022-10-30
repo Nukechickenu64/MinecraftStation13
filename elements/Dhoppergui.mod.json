@@ -14,6 +14,9 @@
         "type": "button",
         "data": {
           "text": "lavaland",
+          "onClick": {
+            "name": "Sendtolavaland"
+          },
           "width": 67,
           "height": 20,
           "name": "lavaland",

@@ -528,32 +528,92 @@
       "locked_code": false,
       "registry_name": "steelfloor",
       "path": "~/construction/flooring/flooring blocks"
+    },
+    {
+      "name": "Ashblock",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ashblock",
+      "path": "~/lavaland"
+    },
+    {
+      "name": "Ashfloor",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ashfloor",
+      "path": "~/lavaland"
+    },
+    {
+      "name": "Lavaland",
+      "type": "biome",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lavaland",
+      "path": "~/lavaland"
+    },
+    {
+      "name": "Lavalanddimension",
+      "type": "dimension",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lavalanddimension",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/lavaland"
+    },
+    {
+      "name": "Sendtolavaland",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sendtolavaland",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dimensionmovement"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.ms.lattice": "Lattice",
       "item.ms.steel_sheet": "Steel Sheet",
       "block.ms.space": "Space",
       "itemGroup.tabss_13": "SS13",
-      "item.minecraft.tipped_arrow.effect.grav_scrambler": "Arrow of Grav Scrambler",
-      "effect.zero_g": "Zero G",
       "item.minecraft.lingering_potion.effect.grav_scrambler": "Lingering Potion of Grav Scrambler",
       "key.ms.ss_13craftmenu": "ms13crafting",
-      "block.ms.girder": "Girder",
       "item.ms.floor_tile": "Floor Tile",
+      "biome.ms.lavaland": "Lavaland",
+      "block.ms.steelfloor": "Steelfloor",
+      "block.ms.d_hopper": "Hopper",
+      "block.ms.steel_wall": "Steel Wall",
+      "item.ms.welder": "Welder",
+      "block.ms.ashblock": "Ashblock",
+      "item.minecraft.potion.effect.grav_scrambler": "Gravity Scrambler",
+      "block.ms.lattice": "Lattice",
+      "item.ms.lavalanddimension": "Lavalanddimension Portal Igniter",
+      "block.ms.ashfloor": "Ashfloor",
+      "item.minecraft.tipped_arrow.effect.grav_scrambler": "Arrow of Grav Scrambler",
+      "effect.zero_g": "Zero G",
+      "block.ms.girder": "Girder",
       "block.ms.plating": "Plating",
       "biome.ms.space_biome": "Space Biome",
       "item.minecraft.splash_potion.effect.grav_scrambler": "Splash Potion of Grav Scrambler",
       "item.ms.steel_rod": "Steel Rod",
-      "block.ms.steelfloor": "Steelfloor",
-      "block.ms.d_hopper": "Hopper",
-      "block.ms.steel_wall": "Steel Wall",
-      "item.ms.space_dimension": "Space Dimension Portal Igniter",
-      "item.ms.welder": "Welder",
-      "item.minecraft.potion.effect.grav_scrambler": "Gravity Scrambler"
+      "item.ms.space_dimension": "Space Dimension Portal Igniter"
     }
   },
   "foldersRoot": {
@@ -607,6 +667,10 @@
       },
       {
         "name": "lavaland",
+        "children": []
+      },
+      {
+        "name": "mining",
         "children": []
       }
     ]

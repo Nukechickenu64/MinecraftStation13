@@ -23,6 +23,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.ScreenManager;
 
 import net.mcreator.ms.procedures.SendtospaceProcedure;
+import net.mcreator.ms.procedures.SendtolavalandProcedure;
 import net.mcreator.ms.procedures.SendtoearthProcedure;
 import net.mcreator.ms.MsModElements;
 
@@ -186,6 +187,11 @@ public class DhopperguiGui extends MsModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+
+			SendtolavalandProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
 		if (buttonID == 1) {
 
 			SendtospaceProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
